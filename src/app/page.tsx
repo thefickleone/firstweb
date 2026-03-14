@@ -1,7 +1,7 @@
-import Hero from "@/components/Hero";
-import Features from "@/components/Features";
-import Gallery from "@/components/Gallery";
-import Contact from "@/components/Contact";
+import Hero from "../../components/Hero";
+import Features from "../../components/Features";
+import Gallery from "../../components/Gallery";
+import Contact from "../../components/Contact";
 
 export default function Home() {
   return (
