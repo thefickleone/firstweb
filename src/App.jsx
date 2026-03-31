@@ -83,6 +83,11 @@ function App() {
 
   return (
     <div className="app-shell" data-reduced-motion={reducedMotion ? 'true' : 'false'}>
+      <div className="ambient-layer" aria-hidden="true">
+        <span className="ambient-orb ambient-orb-a" />
+        <span className="ambient-orb ambient-orb-b" />
+        <span className="ambient-grid" />
+      </div>
       <PointerLight enabled={!reducedMotion} />
       <ReducedMotionToggle reducedMotion={reducedMotion} onToggle={handleToggleReducedMotion} />
       <MotionModeToast message={toastMessage} visible={toastVisible} />

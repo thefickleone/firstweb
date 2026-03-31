@@ -23,7 +23,7 @@ function Hero({ reducedMotion }) {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.05, delay: 0.05, ease: [0.16, 1, 0.3, 1] }}
       >
-        Scrollytelling Demo
+        Scrollytelling <span className="hero-title-glow">Demo</span>
       </motion.h1>
       <motion.p
         className="hero-copy"
@@ -33,6 +33,15 @@ function Hero({ reducedMotion }) {
       >
         Premium pacing, rich typography, and fluid interactions shaped for modern product storytelling.
       </motion.p>
+      <motion.div
+        className="hero-scroll-cue"
+        initial={{ opacity: 0, y: 16 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.45, ease: [0.2, 0.65, 0.3, 0.9] }}
+      >
+        <span>Scroll to explore</span>
+        <span className="hero-scroll-line" aria-hidden="true" />
+      </motion.div>
     </section>
   );
 }
