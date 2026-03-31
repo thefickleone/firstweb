@@ -88,14 +88,21 @@ function App() {
         <span className="ambient-orb ambient-orb-b" />
         <span className="ambient-grid" />
       </div>
+      <div className="film-layer" aria-hidden="true">
+        <span className="film-gradient" />
+        <span className="film-noise" />
+      </div>
       <PointerLight enabled={!reducedMotion} />
       <ReducedMotionToggle reducedMotion={reducedMotion} onToggle={handleToggleReducedMotion} />
       <MotionModeToast message={toastMessage} visible={toastVisible} />
       <MotionConfig reducedMotion={reducedMotion ? 'always' : 'never'}>
         <div className="app-content">
           <Hero reducedMotion={reducedMotion} />
+          <div className="section-divider" aria-hidden="true" />
           <StorySection reducedMotion={reducedMotion} />
+          <div className="section-divider" aria-hidden="true" />
           <FeatureCards />
+          <div className="section-divider" aria-hidden="true" />
           <CinematicCTA />
         </div>
       </MotionConfig>
