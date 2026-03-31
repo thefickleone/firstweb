@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  width: 100%;
+  min-height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Inter, 'SF Pro Display', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background:
+    radial-gradient(circle at 12% 6%, rgba(124, 153, 255, 0.2), transparent 45%),
+    radial-gradient(circle at 88% 34%, rgba(124, 95, 255, 0.16), transparent 42%),
+    linear-gradient(180deg, #05060a 0%, #080c13 30%, #070b11 100%);
+  color: var(--text-primary);
+}
+
+.section-padding {
+  width: min(100% - 6rem, var(--max-width));
+  margin: 0 auto;
+}
+
+.eyebrow {
+  margin: 0;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+@media (max-width: 900px) {
+  .section-padding {
+    width: min(100% - 2.2rem, var(--max-width));
+  }
+}
+
